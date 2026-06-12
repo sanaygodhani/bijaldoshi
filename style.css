@@ -2030,7 +2030,13 @@ footer {
   }
   
   .home-intro {
-    height: 90vh;
+    height: 100svh;
+  }
+  
+  .initial-img-container {
+    width: 11.5rem;
+    height: 19rem;
+    max-height: 55vh;
   }
   
   .concept-panel {
@@ -2042,10 +2048,29 @@ footer {
     gap: 2rem;
   }
   
-  
   .drawer-content {
     width: 100vw;
     padding: 5rem var(--padding);
+  }
+
+  /* Footer Bottom Responsive Stacking */
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 0;
+  }
+
+  .footer-logo-img {
+    height: 24px;
   }
 }
 
@@ -2171,5 +2196,13 @@ footer {
   
   .tab-item:active .tab-icon-wrapper {
     transform: scale(0.85);
+  }
+}
+
+@media (max-width: 480px) {
+  .initial-img-container {
+    width: 10.5rem;
+    height: 17.5rem;
+    max-height: 50vh;
   }
 }
