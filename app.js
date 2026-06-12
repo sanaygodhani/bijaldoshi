@@ -198,28 +198,22 @@ function initHorizontalScroll() {
   if (!section || !container) return;
 
   const handleScroll = () => {
-    // Only run horizontal translate scroll on desktop (> 768px)
-    if (window.innerWidth > 768) {
-      const rect = section.getBoundingClientRect();
-      const sectionHeight = rect.height;
-      const scrollableHeight = sectionHeight - window.innerHeight;
+    const rect = section.getBoundingClientRect();
+    const sectionHeight = rect.height;
+    const scrollableHeight = sectionHeight - window.innerHeight;
+    
+    if (rect.top <= 0 && rect.top >= -scrollableHeight) {
+      // Calculate scroll progress (0 to 1)
+      const progress = -rect.top / scrollableHeight;
+      const maxScroll = container.offsetWidth - window.innerWidth;
+      const translateX = -progress * maxScroll;
       
-      if (rect.top <= 0 && rect.top >= -scrollableHeight) {
-        // Calculate scroll progress (0 to 1)
-        const progress = -rect.top / scrollableHeight;
-        const maxScroll = container.offsetWidth - window.innerWidth;
-        const translateX = -progress * maxScroll;
-        
-        container.style.transform = `translateX(${translateX}px)`;
-      } else if (rect.top > 0) {
-        container.style.transform = 'translateX(0px)';
-      } else {
-        const maxScroll = container.offsetWidth - window.innerWidth;
-        container.style.transform = `translateX(${-maxScroll}px)`;
-      }
+      container.style.transform = `translateX(${translateX}px)`;
+    } else if (rect.top > 0) {
+      container.style.transform = 'translateX(0px)';
     } else {
-      // Clear transform on mobile so vertical stacking styling works
-      container.style.transform = '';
+      const maxScroll = container.offsetWidth - window.innerWidth;
+      container.style.transform = `translateX(${-maxScroll}px)`;
     }
   };
 
@@ -440,10 +434,6 @@ function initHeroScroll() {
   if (!introSection) return;
 
   const handleScroll = () => {
-    if (window.innerWidth <= 1024) {
-      return;
-    }
-
     const rect = introSection.getBoundingClientRect();
     const scrollTop = -rect.top;
     const scrollHeight = rect.height - window.innerHeight;
@@ -545,16 +535,33 @@ function initNavigation() {
 
   // 3. Mobile Tab Bar Auto-Hide on Scroll Down / Show on Scroll Up
   let lastScrollTop = 0;
+  const logoLink = document.querySelector('header .logo-link');
   const handleTabBarHide = () => {
-    if (window.innerWidth <= 1024 && mobileTabBar) {
+    if (window.innerWidth <= 1024) {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop && scrollTop > 100) {
-        // Scroll down - hide bar using GPU-accelerated translation
-        mobileTabBar.style.transform = 'translateX(-50%) translateY(6rem)';
-      } else {
-        // Scroll up - show bar
-        mobileTabBar.style.transform = 'translateX(-50%) translateY(0)';
+      
+      // Auto-hide mobile tab bar
+      if (mobileTabBar) {
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+          mobileTabBar.style.transform = 'translateX(-50%) translateY(6rem)';
+        } else {
+          mobileTabBar.style.transform = 'translateX(-50%) translateY(0)';
+        }
       }
+      
+      // Auto-hide logo
+      if (logoLink) {
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+          logoLink.style.opacity = '0';
+          logoLink.style.transform = 'translateY(-2rem)';
+          logoLink.style.pointerEvents = 'none';
+        } else {
+          logoLink.style.opacity = '1';
+          logoLink.style.transform = 'translateY(0)';
+          logoLink.style.pointerEvents = 'auto';
+        }
+      }
+      
       lastScrollTop = Math.max(0, scrollTop);
     }
   };
