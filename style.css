@@ -463,6 +463,7 @@ section {
   transform: translateY(0.5rem);
   display: block;
   white-space: nowrap;
+  text-transform: lowercase;
 }
 
 .intro-title-wrapper .text-arquitectura {
