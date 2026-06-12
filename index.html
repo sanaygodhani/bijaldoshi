@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>BIJALDOSHI Architects | Official Website</title>
+  <meta name="description" content="BIJALDOSHI Architects is a design studio rooted in India, Mexico, and Barcelona. We craft honest, context-driven architecture that balances heritage, light, and human experience.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-cursor-style="default">
+
+  <!-- Screen Loader -->
+  <div id="loader">
+    <div class="inner-loader">
+      <span class="font-2">
+        <span>BIJALDOSHI.</span>
+      </span>
+      <div class="number-wrapper">
+        <div class="number">
+          <span id="loading-progress">0</span>%
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo-link" data-cursor-style="open">
+      <img src="logo.png" alt="BIJAL DOSHI DESIGNERS LLP." class="logo-img" width="331" height="40" fetchpriority="high">
+    </a>
+
+    <!-- Desktop Navigation Bar -->
+    <nav class="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="#" data-scrollto="#home-about-us" class="active">About us</a></li>
+        <li><a href="#" data-scrollto="#home-other-projects">Projects</a></li>
+        <li><a href="#" data-scrollto="#home-things-that-inspire">Concepts</a></li>
+        <li><a href="#" data-scrollto="#home-team">Team</a></li>
+        <li><a href="#" data-scrollto="footer">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <button id="bt-menu" aria-label="Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 24.707">
+        <g id="bt-menu-bars">
+          <line id="bottombar" x1="0" y1="1" x2="90" y2="1" stroke="black" stroke-width="2" />
+          <line id="topbar" x1="0" y1="23.707" x2="90" y2="23.707" stroke="black" stroke-width="2" />
+        </g>
+      </svg>
+    </button>
+
+    <nav class="menu-overlay">
+      <ul class="menu-list">
+        <li><a href="#" data-letter="About us" data-scrollto="#home-about-us"><span>About us</span></a></li>
+        <li><a href="#" data-letter="Projects" data-scrollto="#home-other-projects"><span>Projects</span></a></li>
+        <li><a href="#" data-letter="Concepts" data-scrollto="#home-things-that-inspire"><span>Concepts</span></a></li>
+        <li><a href="#" data-letter="Team" data-scrollto="#home-team"><span>Team</span></a></li>
+        <li><a href="#" data-letter="Contact" data-scrollto="footer"><span>Contact</span></a></li>
+      </ul>
+      <div class="menu-footer">
+        <div style="font-size: 0.8rem; opacity: 0.6;">© 2026 BIJALDOSHI Architects.</div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Floating Glassmorphism Tab Bar -->
+  <nav class="mobile-tab-bar">
+    <a href="#" class="tab-item active" data-scrollto="#home-about-us">
+      <div class="tab-icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+      </div>
+      <span class="tab-text">About</span>
+    </a>
+    <a href="#" class="tab-item" data-scrollto="#home-other-projects">
+      <div class="tab-icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+        </svg>
+      </div>
+      <span class="tab-text">Projects</span>
+    </a>
+    <a href="#" class="tab-item" data-scrollto="#home-things-that-inspire">
+      <div class="tab-icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+        </svg>
+      </div>
+      <span class="tab-text">Concepts</span>
+    </a>
+    <a href="#" class="tab-item" data-scrollto="#home-team">
+      <div class="tab-icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+      </div>
+      <span class="tab-text">Team</span>
+    </a>
+    <a href="#" class="tab-item" data-scrollto="footer">
+      <div class="tab-icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </div>
+      <span class="tab-text">Contact</span>
+    </a>
+  </nav>
+
+  <!-- 1. Home Intro (500svh scroll track) -->
+  <section class="home-intro">
+    <!-- Scroll Triggers mapped to specific svh positions -->
+    <div class="scroll-triggers">
+      <div class="trigger trigger-1"></div>
+      <div class="trigger trigger-2"></div>
+      <div class="trigger trigger-3"></div>
+      <div class="trigger trigger-4"></div>
+      <div class="trigger trigger-5"></div>
+    </div>
+
+    <!-- Pinned sticky container (100svh) -->
+    <div class="intro-sticky-container">
+      
+      <!-- First State: Logo and Blending Image -->
+      <div class="intro-title-wrapper container-text">
+        <span class="font-2 fs--210 d-block text-bijaldoshi">
+          Bijaldoshi.
+          <span class="d-block fs--47 fw-700 text-arquitectura aos-animate fadeInUp" data-aos="fadeInUp .8s ease-out-cubic .6s" style="animation: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s both fadeInUp;">
+            architects
+          </span>
+        </span>
+      </div>
+      
+      <div class="initial-img-container">
+        <!-- Transitioning Image Container holding the GIF -->
+        <div class="container-img">
+          <img fetchpriority="high" src="generated_images/hero.gif" class="media" alt="BIJALDOSHI Architects">
+        </div>
+        
+        <!-- Mask silhouette aligned with the first line -->
+        <div class="text-spacer pin-spacer">
+          <span class="invisible-text font-2 fs--210 d-block text-bijaldoshi background-text js-running">
+            Bijaldoshi.
+            <span class="d-block fs--47 fw-700 text-arquitectura aos-animate fadeInUp" data-aos="fadeInUp .8s ease-out-cubic .6s" style="animation: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s both fadeInUp;">
+              architects
+            </span>
+          </span>
+        </div>
+      </div>
+      
+      <!-- Second State: Staggered Project Gallery -->
+      <div class="gallery-wrapper">
+        <!-- Card 1 (Top-left) -->
+        <div class="gallery-card card-1" style="--pt: 8%; --pr: 74%; --img-w: 20vw; --img-ratio: 0.75;"
+             data-get-category="infrastructure"
+             data-title="Khufu's Pavilion" data-subtitle="Heritage-Driven Narrative Pavilion" data-year="2021" data-location="Giza Plateau, Egypt"
+             data-desc="Khufu's is designed with absolute clarity and restraint. Located on the Giza Plateau, the architecture belongs entirely to the landscape, blending earthy tones like sand and stone to interpret regional heritage through a modern lens."
+             data-img="generated_images/landscape_heritage.png" data-principle="Clarity and Restraint"
+             data-principle-text="The setting is part of the table; the architecture belongs to the landscape. We ground the structure in its natural surroundings, using local materials to blur the line between nature and human construction.">
+          <div class="card-inner">
+            <img src="generated_images/landscape_heritage.png" alt="Khufu's Pavilion">
+            <div class="card-info">
+              <span class="card-title">Khufu's Pavilion</span>
+              <span class="card-details">Giza Plateau / 2021</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 2 (Middle-left) -->
+        <div class="gallery-card card-2" style="--pt: 15%; --pr: 45%; --img-w: 22vw; --img-ratio: 1.3;"
+             data-get-category="interior-design"
+             data-title="Bijaldoshi Studio" data-subtitle="Vernacular Minimalist Studio" data-year="2023" data-location="Barcelona, Spain"
+             data-desc="This studio exemplifies the balance between vernacular heritage and modern minimalism. Constructed with high-contrast monochrome values, it channels shadows to create a sense of shelter and refuge."
+             data-img="generated_images/hero_concrete.png" data-principle="Space and Light"
+             data-principle-text="Beauty is a consequence of use; architecture is an emotional state. Design should prioritize negative space and light, framing shadows as a sanctuary within the structure.">
+          <div class="card-inner">
+            <img src="generated_images/hero_concrete.png" alt="Bijaldoshi Studio">
+            <div class="card-info">
+              <span class="card-title">Bijaldoshi Studio</span>
+              <span class="card-details">Barcelona / 2023</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 (Top-right) -->
+        <div class="gallery-card card-3" style="--pt: 8%; --pr: 12%; --img-w: 18vw; --img-ratio: 1.0;"
+             data-get-category="residential"
+             data-title="Aretè Residence" data-subtitle="Luxury Restoration & Heritage Intervention" data-year="2022" data-location="Milan, Italy"
+             data-desc="Aretè Residence represents a contemporary heritage approach to luxury restoration. It applies surgical, ultra-modern design interventions to historical structures, preserving existing values while adding state-of-the-art living comforts."
+             data-img="random_images/residential-02.jpg" data-principle="Contemporary Heritage"
+             data-principle-text="Enhancing existing historical value through ultra-modern, surgical intervention. We avoid wiping history clean, opting instead to place contemporary elements side-by-side with historical brickwork and stone.">
+          <div class="card-inner">
+            <img src="random_images/residential-02.jpg" alt="Aretè Residence">
+            <div class="card-info">
+              <span class="card-title">Aretè Residence</span>
+              <span class="card-details">Milan / 2022</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 4 (Bottom-left) -->
+        <div class="gallery-card card-4" style="--pt: 58%; --pr: 76%; --img-w: 16vw; --img-ratio: 1.2;"
+             data-get-category="residential"
+             data-title="Zorge 9 Estate" data-subtitle="Manhattan Industrial-Chic Living" data-year="2020" data-location="Moscow, Russia"
+             data-desc="Zorge 9 brings 20th-century New York industrial-chic to a modern residential context. It features strict vertical facades, clinker brick, granite textures, and panoramic glazing."
+             data-img="random_images/commercial-01.jpg" data-principle="Industrial Facade Rhythm"
+             data-principle-text="Rhythmic facades and luxury hospitality vibes in a residential context. The design uses vertical structural masonry and massive glass bays to invoke the raw density of Soho.">
+          <div class="card-inner">
+            <img src="random_images/commercial-01.jpg" alt="Zorge 9 Estate">
+            <div class="card-info">
+              <span class="card-title">Zorge 9 Estate</span>
+              <span class="card-details">Moscow / 2020</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 5 (Bottom-right) -->
+        <div class="gallery-card card-5" style="--pt: 55%; --pr: 10%; --img-w: 24vw; --img-ratio: 0.8;"
+             data-get-category="residential"
+             data-title="Haven Villa" data-subtitle="Bespoke Luxury & Quiet Restraint" data-year="2022" data-location="Sydney, Australia"
+             data-desc="Haven Villa is a measured response to residential design. It delivers craftsmanship without excess, using a refined dark charcoal palette that lets the geometry and texture of the home do the talking."
+             data-img="random_images/residential-03.jpg" data-principle="Bespoke Luxury Through Restraint"
+             data-principle-text="Homes that speak without words through quiet excellence. We focus on physical comfort, visual weight, and perfect joins rather than loud ornaments.">
+          <div class="card-inner">
+            <img src="random_images/residential-03.jpg" alt="Haven Villa">
+            <div class="card-info">
+              <span class="card-title">Haven Villa</span>
+              <span class="card-details">Sydney / 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll Indicator -->
+      <span class="intro-scroll-indicator">Scroll</span>
+    </div>
+  </section>
+
+  <!-- 2. Home About Us -->
+  <section class="home-about-us" id="home-about-us">
+    <div class="container-fluid">
+      <div class="about-intro-text reveal-on-scroll">
+        <p><strong>Bijal Doshi Designers LLP</strong> is known for their unique & detailed approach right from the word go, in Interiors & Architecture too. In the past few years, Bijal Doshi Designers has emerged as a successful leading full-service organization in luxury architecture, interior designing & decor firms.</p>
+      </div>
+
+      <div class="about-columns">
+        <div class="about-left reveal-on-scroll">
+          <h3>We believe in <span>contemporary and bespoke designs</span> that transform understanding into reality.</h3>
+        </div>
+        
+        <div class="about-right reveal-on-scroll">
+          <div class="about-video-card" data-cursor-style="play">
+            <!-- PLACEHOLDER: Replace src below with your own project video (MP4 recommended, ~5–15s looping clip of your architectural work). -->
+            <video muted autoplay loop playsinline src="video.mp4" poster="generated_images/hero_concrete.png"></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-swiper-block reveal-on-scroll">
+        <div class="swiper-carousel">
+          <div class="swiper-slide-img active" style="background-image: url('random_images/about-banner.jpg');"></div>
+          <div class="swiper-slide-img" style="background-image: url('random_images/about-bg-img.jpg');"></div>
+          <div class="swiper-slide-img" style="background-image: url('random_images/about-img.jpg');"></div>
+        </div>
+        
+        <div class="about-swiper-desc">
+          <h3>At Bijal Doshi Designers, creativity is inventing, experimenting, growing, breaking rules and enjoying work.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Other Projects (Split-Screen Showcase) -->
+  <section class="home-other-projects" id="home-other-projects">
+    <div class="container-fluid">
+      <span class="section-tag">Our Works</span>
+      
+      <!-- Filters -->
+      <div class="projects-filter-wrapper reveal-on-scroll">
+        <button class="projects-filter-btn active" data-filter="all">All Projects</button>
+        <button class="projects-filter-btn" data-filter="residential">Housing</button>
+        <button class="projects-filter-btn" data-filter="infrastructure">Infrastructure</button>
+        <button class="projects-filter-btn" data-filter="interior-design">Interior Design</button>
+        <button class="projects-filter-btn" data-filter="masterplan">Masterplan</button>
+      </div>
+
+      <!-- Split Screen Layout Container -->
+      <div class="projects-split-container reveal-on-scroll">
+        
+        <!-- Left Side: Interactive Table List -->
+        <div class="projects-list-column">
+          <div class="projects-list-header">
+            <div class="header-col col-title">Project</div>
+            <div class="header-col col-category">Category</div>
+            <div class="header-col col-location">Location</div>
+            <div class="header-col col-year">Year</div>
+          </div>
+          
+          <ul class="projects-list-body">
+            <!-- Project 1 -->
+            <li class="project-list-row active" data-get-category="infrastructure" data-cursor-style="view"
+                data-title="Khufu's Pavilion" data-subtitle="Heritage-Driven Narrative Pavilion" data-year="2021" data-location="Giza Plateau, Egypt"
+                data-desc="Khufu's is designed with absolute clarity and restraint. Located on the Giza Plateau, the architecture belongs entirely to the landscape, blending earthy tones like sand and stone to interpret regional heritage through a modern lens."
+                data-img="generated_images/landscape_heritage.png" data-principle="Clarity and Restraint"
+                data-principle-text="The setting is part of the table; the architecture belongs to the landscape. We ground the structure in its natural surroundings, using local materials to blur the line between nature and human construction.">
+              <div class="row-col col-title">
+                <span class="project-row-title">Khufu's Pavilion</span>
+                <span class="project-row-subtitle-mobile">Heritage-Driven Narrative Pavilion</span>
+              </div>
+              <div class="row-col col-category">Infrastructure</div>
+              <div class="row-col col-location">Giza Plateau, Egypt</div>
+              <div class="row-col col-year">2021</div>
+              <!-- Mobile visual collapse container -->
+              <div class="project-row-mobile-visual">
+                <img src="generated_images/landscape_heritage.png" alt="Khufu's Pavilion">
+              </div>
+            </li>
+
+            <!-- Project 2 -->
+            <li class="project-list-row" data-get-category="interior-design" data-cursor-style="view"
+                data-title="Bijaldoshi Studio" data-subtitle="Vernacular Minimalist Studio" data-year="2023" data-location="Barcelona, Spain"
+                data-desc="This studio exemplifies the balance between vernacular heritage and modern minimalism. Constructed with high-contrast monochrome values, it channels shadows to create a sense of shelter and refuge."
+                data-img="generated_images/hero_concrete.png" data-principle="Space and Light"
+                data-principle-text="Beauty is a consequence of use; architecture is an emotional state. Design should prioritize negative space and light, framing shadows as a sanctuary within the structure.">
+              <div class="row-col col-title">
+                <span class="project-row-title">Bijaldoshi Studio</span>
+                <span class="project-row-subtitle-mobile">Vernacular Minimalist Studio</span>
+              </div>
+              <div class="row-col col-category">Interior Design</div>
+              <div class="row-col col-location">Barcelona, Spain</div>
+              <div class="row-col col-year">2023</div>
+              <div class="project-row-mobile-visual">
+                <img src="generated_images/hero_concrete.png" alt="Bijaldoshi Studio">
+              </div>
+            </li>
+
+            <!-- Project 3 -->
+            <li class="project-list-row" data-get-category="residential" data-cursor-style="view"
+                data-title="Aretè Residence" data-subtitle="Luxury Restoration & Heritage Intervention" data-year="2022" data-location="Milan, Italy"
+                data-desc="Aretè Residence represents a contemporary heritage approach to luxury restoration. It applies surgical, ultra-modern design interventions to historical structures, preserving existing values while adding state-of-the-art living comforts."
+                data-img="random_images/residential-02.jpg" data-principle="Contemporary Heritage"
+                data-principle-text="Enhancing existing historical value through ultra-modern, surgical intervention. We avoid wiping history clean, opting instead to place contemporary elements side-by-side with historical brickwork and stone.">
+              <div class="row-col col-title">
+                <span class="project-row-title">Aretè Residence</span>
+                <span class="project-row-subtitle-mobile">Luxury Restoration & Heritage Intervention</span>
+              </div>
+              <div class="row-col col-category">Housing</div>
+              <div class="row-col col-location">Milan, Italy</div>
+              <div class="row-col col-year">2022</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/residential-02.jpg" alt="Aretè Residence">
+              </div>
+            </li>
+
+            <!-- Project 4 -->
+            <li class="project-list-row" data-get-category="residential" data-cursor-style="view"
+                data-title="Zorge 9 Estate" data-subtitle="Manhattan Industrial-Chic Living" data-year="2020" data-location="Moscow, Russia"
+                data-desc="Zorge 9 brings 20th-century New York industrial-chic to a modern residential context. It features strict vertical facades, clinker brick, granite textures, and panoramic glazing."
+                data-img="random_images/commercial-01.jpg" data-principle="Industrial Facade Rhythm"
+                data-principle-text="Rhythmic facades and luxury hospitality vibes in a residential context. The design uses vertical structural masonry and massive glass bays to invoke the raw density of Soho.">
+              <div class="row-col col-title">
+                <span class="project-row-title">Zorge 9 Estate</span>
+                <span class="project-row-subtitle-mobile">Manhattan Industrial-Chic Living</span>
+              </div>
+              <div class="row-col col-category">Housing</div>
+              <div class="row-col col-location">Moscow, Russia</div>
+              <div class="row-col col-year">2020</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/commercial-01.jpg" alt="Zorge 9 Estate">
+              </div>
+            </li>
+
+            <!-- Project 5 -->
+            <li class="project-list-row" data-get-category="residential" data-cursor-style="view"
+                data-title="Haven Villa" data-subtitle="Bespoke Luxury & Quiet Restraint" data-year="2022" data-location="Sydney, Australia"
+                data-desc="Haven Villa is a measured response to residential design. It delivers craftsmanship without excess, using a refined dark charcoal palette that lets the geometry and texture of the home do the talking."
+                data-img="random_images/residential-03.jpg" data-principle="Bespoke Luxury Through Restraint"
+                data-principle-text="Homes that speak without words through quiet excellence. We focus on physical comfort, visual weight, and perfect joins rather than loud ornaments.">
+              <div class="row-col col-title">
+                <span class="project-row-title">Haven Villa</span>
+                <span class="project-row-subtitle-mobile">Bespoke Luxury & Quiet Restraint</span>
+              </div>
+              <div class="row-col col-category">Housing</div>
+              <div class="row-col col-location">Sydney, Australia</div>
+              <div class="row-col col-year">2022</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/residential-03.jpg" alt="Haven Villa">
+              </div>
+            </li>
+
+            <!-- Project 6 -->
+            <li class="project-list-row" data-get-category="masterplan" data-cursor-style="view"
+                data-title="333 South Wabash" data-subtitle="Miesian Minimalism & Shared Workspace" data-year="2019" data-location="Chicago, USA"
+                data-desc="A modern Workspace redesign in Chicago's famous 'Big Red' skyscraper. It utilizes a strict grid layout, Miesian minimalism, and structural glassmorphism, with bold red accents reflecting the building's historical identity."
+                data-img="random_images/commercial-02.jpg" data-principle="Miesian Minimalism"
+                data-principle-text="Less is More meeting modern hospitality. We utilize structural transparency, glass panels, and geometric grids to provide a flexible corporate workspace.">
+              <div class="row-col col-title">
+                <span class="project-row-title">333 South Wabash</span>
+                <span class="project-row-subtitle-mobile">Miesian Minimalism & Shared Workspace</span>
+              </div>
+              <div class="row-col col-category">Masterplan</div>
+              <div class="row-col col-location">Chicago, USA</div>
+              <div class="row-col col-year">2019</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/commercial-02.jpg" alt="333 South Wabash">
+              </div>
+            </li>
+
+            <!-- Project 7 -->
+            <li class="project-list-row" data-get-category="interior-design" data-cursor-style="view"
+                data-title="Yazdani Research Lab" data-subtitle="Experimental Minimalism & Design Exploration" data-year="2023" data-location="Los Angeles, USA"
+                data-desc="Yazdani Research Lab serves as an experimental studio for architectural research. Designed as a stark laboratory, it uses a black-and-white canvas to focus attention entirely on architectural experiments and 3D renderings."
+                data-img="generated_images/interior_light.png" data-principle="Experimental Minimalism"
+                data-principle-text="Leaving past precedent in the past; focusing on human impact. We build minimalist workspaces that act as neutral canvases for creative development.">
+              <div class="row-col col-title">
+                <span class="project-row-title">Yazdani Research Lab</span>
+                <span class="project-row-subtitle-mobile">Experimental Minimalism & Design Exploration</span>
+              </div>
+              <div class="row-col col-category">Interior Design</div>
+              <div class="row-col col-location">Los Angeles, USA</div>
+              <div class="row-col col-year">2023</div>
+              <div class="project-row-mobile-visual">
+                <img src="generated_images/interior_light.png" alt="Yazdani Research Lab">
+              </div>
+            </li>
+
+            <!-- Project 8 -->
+            <li class="project-list-row" data-get-category="masterplan" data-cursor-style="view"
+                data-title="Aircenter Tower" data-subtitle="Class A Corporate Architecture" data-year="2021" data-location="Frankfurt, Germany"
+                data-desc="Aircenter Tower is a Class A corporate office building that matches grand scale with architectural innovation. It features a sweeping curved glass facade, rotating panels, and an grand 8-meter ceiling lobby."
+                data-img="random_images/commercial-03.jpg" data-principle="Dynamic Facade Scale"
+                data-principle-text="Intelligent harmony between movement and monumental status. We create architectures that interact with the sky and surrounding urban skyline through reflective waves.">
+              <div class="row-col col-title">
+                <span class="project-row-title">Aircenter Tower</span>
+                <span class="project-row-subtitle-mobile">Class A Corporate Architecture</span>
+              </div>
+              <div class="row-col col-category">Masterplan</div>
+              <div class="row-col col-location">Frankfurt, Germany</div>
+              <div class="row-col col-year">2021</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/commercial-03.jpg" alt="Aircenter Tower">
+              </div>
+            </li>
+
+            <!-- Project 9 -->
+            <li class="project-list-row" data-get-category="masterplan" data-cursor-style="view"
+                data-title="Archigreen HQ" data-subtitle="Multidisciplinary Precise Architecture" data-year="2022" data-location="London, UK"
+                data-desc="Archigreen HQ focuses on technical precision and precision engineering. Built using healthcare-grade spatial layouts and LIDAR mapping, the project incorporates clean lines with strict functional efficiency."
+                data-img="random_images/commercial-04.jpg" data-principle="Smart and Precise"
+                data-principle-text="Blending creativity with technical accuracy. Every corner, duct, and pane is mapped to millimeter precision, displaying the beauty of structural engineering.">
+              <div class="row-col col-title">
+                <span class="project-row-title">Archigreen HQ</span>
+                <span class="project-row-subtitle-mobile">Multidisciplinary Precise Architecture</span>
+              </div>
+              <div class="row-col col-category">Masterplan</div>
+              <div class="row-col col-location">London, UK</div>
+              <div class="row-col col-year">2022</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/commercial-04.jpg" alt="Archigreen HQ">
+              </div>
+            </li>
+
+            <!-- Project 10 -->
+            <li class="project-list-row" data-get-category="masterplan" data-cursor-style="view"
+                data-title="GISI Offices" data-subtitle="Bento-Grid Corporate Headquarters" data-year="2020" data-location="New York, USA"
+                data-desc="GISI Offices organize a complex corporate brand under a unified, modular architecture. It features a scalable bento-box spatial layout and a calm palette of stone grays and dark metals."
+                data-img="random_images/commercial-05.jpg" data-principle="Legacy Preservation"
+                data-principle-text="Enhancing, not erasing. We preserve key elements of old structural layouts while bringing modern office bento-grid modules for seamless workflow.">
+              <div class="row-col col-title">
+                <span class="project-row-title">GISI Offices</span>
+                <span class="project-row-subtitle-mobile">Bento-Grid Corporate Headquarters</span>
+              </div>
+              <div class="row-col col-category">Masterplan</div>
+              <div class="row-col col-location">New York, USA</div>
+              <div class="row-col col-year">2020</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/commercial-05.jpg" alt="GISI Offices">
+              </div>
+            </li>
+
+            <!-- Project 11 -->
+            <li class="project-list-row" data-get-category="infrastructure" data-cursor-style="view"
+                data-title="HBA Sanctuary" data-subtitle="Luxury Storytelling & Cultural Hospitality" data-year="2023" data-location="Singapore"
+                data-desc="HBA Sanctuary is designed around narrative and local context. It features editorial spatial layouts, high-contrast wood finishes, and large windows that connect the interior directly with its cultural surroundings."
+                data-img="random_images/banner-02.jpg" data-principle="Luxury Storytelling"
+                data-principle-text="Creating fantasy and drama through design. We weave historical and local narratives directly into the physical layout, turning a hotel stay into a story.">
+              <div class="row-col col-title">
+                <span class="project-row-title">HBA Sanctuary</span>
+                <span class="project-row-subtitle-mobile">Luxury Storytelling & Cultural Hospitality</span>
+              </div>
+              <div class="row-col col-category">Infrastructure</div>
+              <div class="row-col col-location">Singapore</div>
+              <div class="row-col col-year">2023</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/banner-02.jpg" alt="HBA Sanctuary">
+              </div>
+            </li>
+
+            <!-- Project 12 -->
+            <li class="project-list-row" data-get-category="infrastructure" data-cursor-style="view"
+                data-title="WatchHouse Cafe" data-subtitle="Considered Texture & Local Experience" data-year="2022" data-location="London, UK"
+                data-desc="WatchHouse Coffee is built on considered material texture. The design focuses on raw granite counters, custom tiling, and timber detailing, creating a sensory hospitality layout where no two Houses are the same."
+                data-img="random_images/banner-04.jpg" data-principle="Considered Design"
+                data-principle-text="Anticipating every detail; respect for site heritage. We design spaces that respond to their specific street corner, utilizing raw local masonry to create community hubs.">
+              <div class="row-col col-title">
+                <span class="project-row-title">WatchHouse Cafe</span>
+                <span class="project-row-subtitle-mobile">Considered Texture & Local Experience</span>
+              </div>
+              <div class="row-col col-category">Infrastructure</div>
+              <div class="row-col col-location">London, UK</div>
+              <div class="row-col col-year">2022</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/banner-04.jpg" alt="WatchHouse Cafe">
+              </div>
+            </li>
+
+            <!-- Project 13 -->
+            <li class="project-list-row" data-get-category="interior-design" data-cursor-style="view"
+                data-title="La Nube Pavilion" data-subtitle="Inflatable & Sensory Architecture" data-year="2024" data-location="Madrid, Spain"
+                data-desc="La Nube is an ephemeral, sensory pavilion designed using inflatable structural membranes. It features organic fluid curves and diffused internal lighting that resembles the aurora borealis, achieving grand spatial presence with minimal physical weight."
+                data-img="generated_images/inflatable_pavilion.png" data-principle="Ephemeral Lightness"
+                data-principle-text="Building with air; leave no trace. This pavilion challenges the density of traditional architecture, using pressure and light to construct organic, temporary public spaces.">
+              <div class="row-col col-title">
+                <span class="project-row-title">La Nube Pavilion</span>
+                <span class="project-row-subtitle-mobile">Inflatable & Sensory Architecture</span>
+              </div>
+              <div class="row-col col-category">Interior Design</div>
+              <div class="row-col col-location">Madrid, Spain</div>
+              <div class="row-col col-year">2024</div>
+              <div class="project-row-mobile-visual">
+                <img src="generated_images/inflatable_pavilion.png" alt="La Nube Pavilion">
+              </div>
+            </li>
+
+            <!-- Project 14 -->
+            <li class="project-list-row" data-get-category="residential" data-cursor-style="view"
+                data-title="Marvell Villa" data-subtitle="Crafted Textural Materiality" data-year="2021" data-location="Melbourne, Australia"
+                data-desc="Marvell Villa highlights mid-century modern influence combined with heavy textural materiality. The home showcases exquisite slate tiles, raw brickwork, and timber joins."
+                data-img="random_images/residential-04.jpg" data-principle="Traditional Craftsmanship"
+                data-principle-text="Luxury is in the precision of the artisan's touch. We design projects around the hand-laid stone, custom-cut timber, and tailored masonry of local builders.">
+              <div class="row-col col-title">
+                <span class="project-row-title">Marvell Villa</span>
+                <span class="project-row-subtitle-mobile">Crafted Textural Materiality</span>
+              </div>
+              <div class="row-col col-category">Housing</div>
+              <div class="row-col col-location">Melbourne, Australia</div>
+              <div class="row-col col-year">2021</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/residential-04.jpg" alt="Marvell Villa">
+              </div>
+            </li>
+
+            <!-- Project 15 -->
+            <li class="project-list-row" data-get-category="residential" data-cursor-style="view"
+                data-title="Omai Sanctuaries" data-subtitle="Elite Architectural Sanctuary" data-year="2023" data-location="Bali, Indonesia"
+                data-desc="Omai Sanctuaries represents destination living redefined. Tucked into natural surroundings, the structures use grand stone slabs, open pavilions, and raw timber elements to connect residents directly with the Indonesian landscape."
+                data-img="random_images/banner-05.jpg" data-principle="Destination Living"
+                data-principle-text="Nature, architecture, and luxury converge. We construct luxury villas that dissolve boundaries, featuring open pavilions and sliding glass barriers that invite nature inside.">
+              <div class="row-col col-title">
+                <span class="project-row-title">Omai Sanctuaries</span>
+                <span class="project-row-subtitle-mobile">Elite Architectural Sanctuary</span>
+              </div>
+              <div class="row-col col-category">Infrastructure</div>
+              <div class="row-col col-location">Bali, Indonesia</div>
+              <div class="row-col col-year">2023</div>
+              <div class="project-row-mobile-visual">
+                <img src="random_images/banner-05.jpg" alt="Omai Sanctuaries">
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Right Side: Sticky Visual Showcase Panel -->
+        <div class="projects-showcase-column">
+          <div class="showcase-sticky-card">
+            
+            <div class="showcase-img-container" data-cursor-style="view">
+              <img id="showcase-img-primary" src="generated_images/landscape_heritage.png" alt="Khufu's Pavilion">
+            </div>
+            
+            <div class="showcase-meta-content">
+              <div class="showcase-header">
+                <span class="showcase-subtitle" id="showcase-subtitle">Heritage-Driven Narrative Pavilion</span>
+                <h3 class="showcase-title" id="showcase-title">Khufu's Pavilion</h3>
+              </div>
+              
+              <div class="showcase-principle-box">
+                <span class="principle-label">Design Principle</span>
+                <h4 class="principle-heading" id="showcase-principle">Clarity and Restraint</h4>
+              </div>
+              
+              <button class="showcase-explore-btn" id="showcase-explore-btn">
+                <span>Explore Project</span>
+                <span class="btn-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Portfolio Download -->
+      <div class="portfolio-download-box reveal-on-scroll">
+        <p class="fs--12 fw-300 text-uppercase" style="color: var(--grey-1);">
+          Here you can download our portfolio with all the projects we have carried out with our team, friends and collaborators.
+        </p>
+        <a href="BIJALDOSHI-PORTFOLIO.pdf" target="_blank" rel="noopener noreferrer" class="portfolio-download-link" data-cursor-style="open">
+          <span>Download the full portfolio</span>
+          <span class="file-indicator">PDF</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Concepts (Horizontal Scroll panel) -->
+  <section class="home-things-that-inspire" id="home-things-that-inspire">
+    <div class="sticky-scroll-wrapper">
+      <div class="horizontal-scroll-container">
+        
+        <!-- Concept 1: Architecture Design -->
+        <div class="concept-panel">
+          <div class="concept-slogan">
+            <span class="d-block">Architecture <span class="contrast-text">Design</span></span>
+          </div>
+          <div class="concept-media-gallery" data-cursor-style="drag">
+            <div class="concept-img-wrapper"><img src="generated_images/hero_concrete.png" alt="Architecture Design 1"></div>
+            <div class="concept-img-wrapper"><img src="random_images/sample-flats-01.jpg" alt="Architecture Design 2"></div>
+            <div class="concept-img-wrapper"><img src="random_images/sample-flats-02.jpg" alt="Architecture Design 3"></div>
+          </div>
+          <div class="concept-text-columns">
+            <p>Artists work from real to abstract, Architects plan to work from abstract to real. We design buildings, open spaces, communities with high regards to sensible aesthetic effect.</p>
+            <p>Our approach to architecture is rooted in the belief that the physical environment should enhance human experience. We blend functional requirements with aesthetic vision to create structures that are both practical and inspiring.</p>
+          </div>
+        </div>
+
+        <!-- Concept 2: Planning -->
+        <div class="concept-panel">
+          <div class="concept-slogan">
+            <span class="d-block">Strategic <span class="contrast-text">Planning</span></span>
+          </div>
+          <div class="concept-media-gallery" data-cursor-style="drag">
+            <div class="concept-img-wrapper"><img src="generated_images/landscape_heritage.png" alt="Planning 1"></div>
+            <div class="concept-img-wrapper"><img src="random_images/sample-flats-03.jpg" alt="Planning 2"></div>
+            <div class="concept-img-wrapper"><img src="random_images/sample-flats-04.jpg" alt="Planning 3"></div>
+          </div>
+          <div class="concept-text-columns">
+            <p>We consider involving & evolving of good planning comes right from inception of a idea till breathing in the structure. we do not plan in order to have clients, we have clients in order to plan.</p>
+            <p>Every project begins with a deep dive into the site, context, and client aspirations. Our planning process is iterative and collaborative, ensuring that every detail is considered before construction begins.</p>
+          </div>
+        </div>
+
+        <!-- Concept 3: Interior Designs -->
+        <div class="concept-panel">
+          <div class="concept-slogan">
+            <span class="d-block">Interior <span class="contrast-text">Designs</span></span>
+          </div>
+          <div class="concept-media-gallery" data-cursor-style="drag">
+            <div class="concept-img-wrapper"><img src="generated_images/interior_light.png" alt="Interior Designs 1"></div>
+            <div class="concept-img-wrapper"><img src="random_images/sample-flats-05.jpg" alt="Interior Designs 2"></div>
+            <div class="concept-img-wrapper"><img src="random_images/sample-flats-06.jpg" alt="Interior Designs 3"></div>
+          </div>
+          <div class="concept-text-columns">
+            <p>Our philosophy agrees that styles come and go, but, we believe, Design is a language and not a style.</p>
+            <p>We specialize in creating bespoke interiors that reflect the unique personality of each client. From material selection to custom furniture, every element is curated to create a cohesive and opulent design.</p>
+          </div>
+        </div>
+
+        <!-- Concept 4: Customer Solutions -->
+        <div class="concept-panel">
+          <div class="concept-slogan">
+            <span class="d-block">Customer <span class="contrast-text">Solutions</span></span>
+          </div>
+          <div class="concept-media-gallery" data-cursor-style="drag">
+            <div class="concept-img-wrapper"><img src="random_images/residential-02.jpg" alt="Solutions 1"></div>
+            <div class="concept-img-wrapper"><img src="random_images/residential-03.jpg" alt="Solutions 2"></div>
+            <div class="concept-img-wrapper"><img src="random_images/residential-04.jpg" alt="Solutions 3"></div>
+          </div>
+          <div class="concept-text-columns">
+            <p>We treat our customers the way we expect to be treated. Customer solutions and services are considered as a by-product of our professional services, with a smile of happiness.</p>
+            <p>Our commitment to excellence extends beyond design. We provide comprehensive support throughout the project lifecycle, ensuring a seamless and satisfying experience for our clients.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Home Team -->
+  <section class="home-team" id="home-team">
+    <div class="container-fluid team-layout">
+      <div class="team-description-col reveal-on-scroll">
+        <span class="section-tag">Collective</span>
+        <h2>Our Team</h2>
+        <p>The founding partners of the studio actively participate in each project. The Project Leader coordinates the entire process, ensuring compliance with goals, deadlines, budget, and quality. The creative and interior design team translates the client's needs into unique concepts and spaces, while the Project Manager and construction supervisor oversee technical development, execution, and scheduling. In addition, we collaborate with a network of external specialists—from engineers and landscapers to lighting designers and artists—to provide tailored solutions for every project.</p>
+      </div>
+
+      <div class="team-marquee-col reveal-on-scroll">
+        <div class="team-marquee-wrapper">
+          <!-- Member 1 -->
+          <div class="member-card">
+            <div class="member-img-box"><img src="random_images/Janhavi-Doshi.jpg" alt="Janhavi Doshi"></div>
+            <div class="member-details">
+              <span class="member-name">Janhavi Doshi</span>
+              <span class="member-role">Co-Founder Architect</span>
+            </div>
+          </div>
+          <!-- Member 2 -->
+          <div class="member-card">
+            <div class="member-img-box"><img src="random_images/bijal-doshi.jpg" alt="Bijal Doshi"></div>
+            <div class="member-details">
+              <span class="member-name">Bijal Doshi</span>
+              <span class="member-role">Co-Founder Architect</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Drawer Overlay Detail View -->
+  <div class="project-drawer" aria-hidden="true">
+    <button class="drawer-close" aria-label="Close project detail">&times;</button>
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <span id="drawer-subtitle" style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--grey-1);">Subtitle</span>
+        <h2 id="drawer-title">Project Title</h2>
+      </div>
+      
+      <div class="drawer-meta">
+        <div class="meta-field">
+          <label>Location</label>
+          <span id="drawer-location">City, Country</span>
+        </div>
+        <div class="meta-field" style="text-align: right;">
+          <label>Year</label>
+          <span id="drawer-year">2026</span>
+        </div>
+      </div>
+
+      <div class="drawer-body">
+        <!-- Unified Drawer Gallery Slider -->
+        <div class="drawer-gallery-slider">
+          <button class="slider-btn prev-btn" aria-label="Previous image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          
+          <div class="slider-slides-container" id="slider-slides">
+            <!-- Dynamically populated slides -->
+          </div>
+          
+          <button class="slider-btn next-btn" aria-label="Next image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+          
+          <div class="slider-dots" id="slider-dots"></div>
+        </div>
+        
+        <p id="drawer-description">Detailed description goes here...</p>
+        
+        <div class="drawer-principle">
+          <h4 id="drawer-principle">Design Principle</h4>
+          <p id="drawer-principle-text" style="margin-bottom: 0;">Principle explanation...</p>
+        </div>
+      </div>
+      
+      <div style="margin-top: auto; padding-top: 4rem;">
+        <button class="footer-submit-btn drawer-close" style="position: static; color: var(--black-1); border-color: var(--black-1);">Close Project</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact & Footer -->
+  <footer>
+    <div class="container-fluid footer-grid reveal-on-scroll">
+      <div class="footer-left">
+        <div class="footer-office">
+          <h3>Mumbai Headquarters</h3>
+          <ul>
+            <li><strong>Address:</strong> Oxford Centre, 3rd floor, 10 Shroff Street Market, Near Colaba Market, Mumbai 400005.</li>
+            <li><strong>Phone:</strong> +91 9820064108 / +91 9920184707</li>
+            <li><strong>Email:</strong> bijal@bijaldoshiarchitects.com</li>
+          </ul>
+        </div>
+        <div class="footer-office">
+          <h3>Work Hours</h3>
+          <ul>
+            <li><strong>Monday - Friday:</strong> 10:00 AM - 7:00 PM</li>
+            <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM</li>
+            <li><strong>Sunday:</strong> Closed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <h3>Connect</h3>
+        <p>Start a project with our team or invite us to collaborate on bespoke architecture and interior designs.</p>
+        
+        <form id="footer-contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Inquiry sent successfully.');">
+          <div class="footer-form-group">
+            <input type="text" id="footer-name" class="footer-form-input" placeholder=" " required autocomplete="name">
+            <label for="footer-name" class="footer-form-label">Your Name</label>
+          </div>
+          <div class="footer-form-group">
+            <input type="email" id="footer-email" class="footer-form-input" placeholder=" " required autocomplete="email">
+            <label for="footer-email" class="footer-form-label">Email Address</label>
+          </div>
+          <div class="footer-form-group" style="margin-bottom: 3rem;">
+            <input type="text" id="footer-message" class="footer-form-input" placeholder=" " required>
+            <label for="footer-message" class="footer-form-label">Message Details</label>
+          </div>
+          <button type="submit" class="footer-submit-btn">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-fluid footer-bottom">
+      <a href="#" class="footer-bottom-logo" data-cursor-style="open">
+        <img src="logo.png" alt="BIJAL DOSHI DESIGNERS LLP." class="footer-logo-img" width="248" height="30" loading="lazy">
+      </a>
+      <ul class="footer-bottom-links">
+        <li><a href="https://www.instagram.com/architectbijaldoshi/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100083820330404" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="mailto:bijal@bijaldoshiarchitects.com">bijal@bijaldoshiarchitects.com</a></li>
+      </ul>
+      <div style="opacity: 0.4; font-size: 0.8rem;">&copy; 2026 BIJALDOSHI Architects. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
