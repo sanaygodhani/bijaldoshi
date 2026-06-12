@@ -197,6 +197,30 @@ function initHorizontalScroll() {
   const container = document.querySelector('.horizontal-scroll-container');
   if (!section || !container) return;
 
+  let currentTranslateX = 0;
+  let targetTranslateX = 0;
+  let animationFrameId = null;
+  const ease = 0.08; // Smoothing factor (lower = smoother/slower, higher = faster/snappier)
+
+  const updateTranslation = () => {
+    // Interpolate current position toward target position
+    const diff = targetTranslateX - currentTranslateX;
+    
+    // If the difference is extremely small, snap to target and stop the loop to save resources
+    if (Math.abs(diff) < 0.1) {
+      currentTranslateX = targetTranslateX;
+      container.style.transform = `translateX(${currentTranslateX}px)`;
+      animationFrameId = null;
+      return;
+    }
+
+    currentTranslateX += diff * ease;
+    container.style.transform = `translateX(${currentTranslateX}px)`;
+    
+    // Continue animation loop
+    animationFrameId = requestAnimationFrame(updateTranslation);
+  };
+
   const handleScroll = () => {
     const rect = section.getBoundingClientRect();
     const sectionHeight = rect.height;
@@ -206,22 +230,33 @@ function initHorizontalScroll() {
       // Calculate scroll progress (0 to 1)
       const progress = -rect.top / scrollableHeight;
       const maxScroll = container.offsetWidth - window.innerWidth;
-      const translateX = -progress * maxScroll;
-      
-      container.style.transform = `translateX(${translateX}px)`;
+      targetTranslateX = -progress * maxScroll;
     } else if (rect.top > 0) {
-      container.style.transform = 'translateX(0px)';
+      targetTranslateX = 0;
     } else {
       const maxScroll = container.offsetWidth - window.innerWidth;
-      container.style.transform = `translateX(${-maxScroll}px)`;
+      targetTranslateX = -maxScroll;
+    }
+
+    // Start loop if not already running
+    if (animationFrameId === null) {
+      animationFrameId = requestAnimationFrame(updateTranslation);
     }
   };
 
   window.addEventListener('scroll', handleScroll, { passive: true });
-  window.addEventListener('resize', handleScroll);
+  
+  window.addEventListener('resize', () => {
+    // Recalculate instantly on resize to avoid jarring layout shifts
+    handleScroll();
+    currentTranslateX = targetTranslateX;
+    container.style.transform = `translateX(${currentTranslateX}px)`;
+  });
   
   // Run once initially
   handleScroll();
+  currentTranslateX = targetTranslateX;
+  container.style.transform = `translateX(${currentTranslateX}px)`;
 }
 
 /* 8. Project Details Drawer overlay */
